@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:align="http://www.w3.org/1999/xhtml">
+<head>
+  <title>reCAPTCHA example</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="1800"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/formStyles.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <script src="JS/app.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="card card-container">
+    <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+    <p id="profile-name" class="profile-name-card"></p>
+      <span id="reauth-email" class="reauth-email"></span>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div id="remember" class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block btn-signin" onclick="sendSomeDataToServer()">Sign in</button>
+    <div id="msg"></div>
+    <a href="#" class="forgot-password">
+      Forgot the password?
+    </a>
+    <br>
+    <br>
+    <div class="g-recaptcha" data-sitekey="*********"></div><!--Your reCAPTCHA site key goes here-->
+  </div><!-- /card-container -->
+</div><!-- /container -->
+</body>
+</html>
