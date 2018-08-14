@@ -4,7 +4,7 @@ Steps to start
  2. node index => Your server will be running.
  3. go to 127.0.0.1:2080 to find the site.
  
- You will need a google account to set up reCAPTCHA uporn setting this up you will get 2 keys 
+ You will need a google account to set up reCAPTCHA upon setting this up you will get 2 keys 
  a site key which goes onto the front end and a secret key which is placed on the server and used to validate requests.
  
  
